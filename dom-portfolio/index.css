@@ -1,0 +1,297 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: black;
+    overflow: hidden !important;
+    height: 100%;
+    background-color: black !important;
+
+    animation-name: opening-fade;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+#preload {
+    display: none;
+}
+
+button {
+    color: #868e96;
+    background-color: black;
+    border: 1px solid #868e96;
+    border-radius: 0px;
+    margin: 2px !important;
+
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    color: white;
+}
+
+.modal-footer > button {
+    color: white !important;
+}
+
+.modal-footer > button:hover {
+    color: #868e96 !important;
+}
+
+@keyframes opening-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal {
+    color: white;
+}
+
+.modal-content {
+    background-color: black !important;
+    border: 2px solid white !important;
+}
+
+.close {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.close:hover {
+    color: #868e96 !important;
+}
+
+p {
+    color: white !important;
+}
+
+a {
+    color: white !important;
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0 !important;
+    list-style-type: none;
+}
+
+#menu {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.menu-hover {
+    transition: ease-in-out 0.4s;
+}
+
+.menu-hover:hover {
+    color: white !important;
+
+    cursor: pointer;
+}
+
+#opening-text-container {
+    background-color: black;
+    height: fit-content;
+}
+
+.openingTextContainer {
+    animation: opening-text-container-reveal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@keyframes opening-text-container-reveal {
+    0% {
+        padding-left: initial;
+    }
+    
+    20% {
+        padding-left: initial;
+    }
+
+    38% {
+        padding-left: 120px;
+    }
+
+    50% {
+        padding-left: 120px;
+    }
+
+    73% {
+        padding-left: initial;
+    }
+
+    100% {
+
+    }
+}
+
+#opening-text-2-container {
+    overflow: hidden !important;
+}
+
+#opening-text-1 {
+    background-color: black;
+
+    border-right: 4px solid white !important;
+    
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#opening-text-1:hover {
+    cursor: default;
+}
+
+#opening-text-2 {
+    transition: 0.4s;
+    position: relative;
+    right: 100%;
+    overflow: hidden !important;
+    
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    animation-name: opening-text-2-animation;
+    animation-delay: 1.5s;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+#opening-text-2:hover {
+    cursor: pointer;
+    color: white !important;
+}
+
+.about-container {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#back-to-menu {
+    width: fit-content !important;
+    transition: 0.4s;
+}
+
+#back-to-menu:hover {
+    cursor: pointer;
+    color: white !important;
+}
+
+@keyframes opening-text-2-animation {
+    0% {
+        right: 100%;
+    }
+
+    40% {
+        right: 100%;
+    }
+
+    82% {
+        right: 0%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+.page-fade-out {
+    animation-name: page-fade-out;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes page-fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.page-fade-in {
+    animation-name: page-fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes page-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#clipboard {
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+#clipboard:hover {
+    color: #868e96 !important;
+    cursor: pointer;
+}
+
+#airplane {
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+#airplane:hover {
+    color: #868e96 !important;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .carousel-caption {
+        position: fixed;
+        top: 65%;
+        left: 50%;
+    }
+
+    .carousel {
+        height: 275px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+  }
+
+  #page-not-found {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
